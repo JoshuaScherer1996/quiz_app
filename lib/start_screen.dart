@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 const startAlignment = Alignment.topLeft;
 const endAlignment = Alignment.bottomRight;
 
+// this could be docu
 class StartScreen extends StatelessWidget {
   const StartScreen({super.key});
 
