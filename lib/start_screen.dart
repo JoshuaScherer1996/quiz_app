@@ -15,6 +15,8 @@ class StartScreen extends StatelessWidget {
           Image.asset(
             'assets/images/quiz-logo.png',
             width: 300,
+            // Used colors to add a transparcy. Helpful to avoid opacity Widget.
+            color: const Color.fromARGB(150, 255, 255, 255),
           ),
           const SizedBox(
             height: 80,
