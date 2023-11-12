@@ -12,8 +12,18 @@ class Quiz extends StatefulWidget {
 }
 
 class _QuizState extends State<Quiz> {
-  // Setting a pointer to the switchScreen function like we defined in the constructor
-  Widget activeScreen = const StartScreen(switchScreen);
+  /* Setting a pointer to the switchScreen function like we defined in the 
+  constructor. Moved into the initState func */
+  Widget? activeScreen;
+
+  /* Used to avoid accessing an object before it is created since both active 
+  screen and switchscreen are created at the same time. InitState allows 
+  us to do some extra initialisation work */
+  @override
+  void initState() {
+    super.initState();
+    activeScreen = StartScreen(switchScreen);
+  }
 
   // Function we set the pointer to when we use the StartScreen constructor
   void switchScreen() {
