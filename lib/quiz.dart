@@ -12,8 +12,10 @@ class Quiz extends StatefulWidget {
 }
 
 class _QuizState extends State<Quiz> {
-  Widget activeScreen = const StartScreen();
+  // Setting a pointer to the switchScreen function like we defined in the constructor
+  Widget activeScreen = const StartScreen(switchScreen);
 
+  // Function we set the pointer to when we use the StartScreen constructor
   void switchScreen() {
     /* setState reexecutes the build method of the state class to adjust the 
     screen for changes */

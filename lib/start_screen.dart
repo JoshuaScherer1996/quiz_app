@@ -4,7 +4,11 @@ const startAlignment = Alignment.topLeft;
 const endAlignment = Alignment.bottomRight;
 
 class StartScreen extends StatelessWidget {
-  const StartScreen({super.key});
+  const StartScreen(this.startQuiz, {super.key});
+
+  /* Variable allows us to create a pointer that points towards a void function 
+  with no args. Used in the constructor with this keyword */
+  final void Function() startQuiz;
 
   @override
   Widget build(context) {
@@ -32,7 +36,7 @@ class StartScreen extends StatelessWidget {
             height: 30,
           ),
           OutlinedButton.icon(
-            onPressed: () {},
+            onPressed: startQuiz,
             style: OutlinedButton.styleFrom(
               foregroundColor: Colors.white,
             ),
