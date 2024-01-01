@@ -11,7 +11,6 @@ class QuestionsScreen extends StatefulWidget {
   }
 }
 
-//docu
 class _QuestionsScreen extends State<QuestionsScreen> {
   @override
   Widget build(context) {
@@ -29,22 +28,18 @@ class _QuestionsScreen extends State<QuestionsScreen> {
             ),
           ),
           const SizedBox(height: 30),
-          AnswerButton(
-            answerText: currentquestion.answers[0],
-            onTap: () {},
-          ),
-          AnswerButton(
-            answerText: currentquestion.answers[1],
-            onTap: () {},
-          ),
-          AnswerButton(
-            answerText: currentquestion.answers[2],
-            onTap: () {},
-          ),
-          AnswerButton(
-            answerText: currentquestion.answers[3],
-            onTap: () {},
-          ),
+          /* these buttons are called spreading. Takes the original list "aparat". 
+          Meaning the objects in the list are now all values outside of a list. 
+          Better example: 
+          const numbers = [1, 2, 3];
+          const moreNums = [numbers, 4]; [[1, 2, 3], 4]
+          const moreNums = [...numbers, 4] -> [1, 2, 3, 4] */
+          ...currentquestion.answers.map((answer) {
+            return AnswerButton(
+              answerText: answer,
+              onTap: () {},
+            );
+          }),
         ],
       ),
     );
