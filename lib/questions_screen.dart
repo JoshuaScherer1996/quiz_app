@@ -14,33 +14,38 @@ class QuestionsScreen extends StatefulWidget {
 class _QuestionsScreen extends State<QuestionsScreen> {
   @override
   Widget build(context) {
-    final currentquestion = questions[0];
+    final currentQuestion = questions[0];
 
     return SizedBox(
       width: double.infinity,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            currentquestion.text,
-            style: const TextStyle(
-              color: Colors.white,
+      child: Container(
+        margin: const EdgeInsets.all(40),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text(
+              currentQuestion.text,
+              style: const TextStyle(
+                color: Colors.white,
+              ),
+              textAlign: TextAlign.center,
             ),
-          ),
-          const SizedBox(height: 30),
-          /* these buttons are called spreading. Takes the original list "aparat". 
-          Meaning the objects in the list are now all values outside of a list. 
-          Better example: 
-          const numbers = [1, 2, 3];
-          const moreNums = [numbers, 4]; [[1, 2, 3], 4]
-          const moreNums = [...numbers, 4] -> [1, 2, 3, 4] */
-          ...currentquestion.answers.map((answer) {
-            return AnswerButton(
-              answerText: answer,
-              onTap: () {},
-            );
-          }),
-        ],
+            const SizedBox(height: 30),
+            /* these buttons are called spreading. Takes the original list "aparat". 
+            Meaning the objects in the list are now all values outside of a list. 
+            Better example: 
+            const numbers = [1, 2, 3];
+            const moreNums = [numbers, 4]; [[1, 2, 3], 4]
+            const moreNums = [...numbers, 4] -> [1, 2, 3, 4] */
+            ...currentQuestion.answers.map((answer) {
+              return AnswerButton(
+                answerText: answer,
+                onTap: () {},
+              );
+            }),
+          ],
+        ),
       ),
     );
   }
