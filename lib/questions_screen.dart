@@ -38,7 +38,7 @@ class _QuestionsScreen extends State<QuestionsScreen> {
             const numbers = [1, 2, 3];
             const moreNums = [numbers, 4]; [[1, 2, 3], 4]
             const moreNums = [...numbers, 4] -> [1, 2, 3, 4] */
-            ...currentQuestion.answers.map((answer) {
+            ...currentQuestion.getShuffledAnswers().map((answer) {
               return AnswerButton(
                 answerText: answer,
                 onTap: () {},
