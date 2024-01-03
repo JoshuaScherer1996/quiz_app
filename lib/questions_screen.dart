@@ -21,10 +21,6 @@ class _QuestionsScreen extends State<QuestionsScreen> {
     widget.onSelectAnswer(selectedAnswer);
     setState(() {
       currentQuestionIndex++;
-      // implemented the logic for index out of bounds
-      if (currentQuestionIndex > 3) {
-        currentQuestionIndex = 0;
-      }
     });
   }
 
