@@ -1,10 +1,10 @@
-# quiz_app
+# Quiz App
 
 Quiz App is a fun Flutter app with a bit more logic than the Dice Roller app I coded before. It is perfect to show multiple screens, some data structuring and ask yourself some basic questions about Flutter on the go! This code was produced during the completion of the Flutter course [A Complete Guide to the Flutter SDK & Flutter Framework for building native iOS and Android apps](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/learn/lecture/37130436#overview).
 
-## Basic Functionality
+## Basic functionality
     
-- Carefully designed UI with different fonts, logos, colors and buttons
+- Carefully designed UI with different fonts, logos, colors and buttons.
 - Tap "start quiz" to start the quiz.
 - Question with randomly shuffled answers.
 - Navigate to the next question every time you give an answer. 
@@ -32,7 +32,7 @@ Quiz App is a fun Flutter app with a bit more logic than the Dice Roller app I c
   <img src="animated_walkthrough.gif" alt="Walkthrough" width="200"/>
 </div>
 
-## Topics Covered
+## Topics covered
 
 There are even more principles and basic topics that I learned while programming this app. These include:
 
