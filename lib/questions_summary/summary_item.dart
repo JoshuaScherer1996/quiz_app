@@ -1,17 +1,23 @@
+// summary_item.dart
+// Represents a widget for displaying a single summary item in the quiz results.
+// It shows the question, user's answer, and the correct answer.
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:quiz_app/questions_summary/questions_identifier.dart';
 
 class SummaryItem extends StatelessWidget {
+  // Constructor for initializing a summary item with specific data.
   const SummaryItem(this.itemData, {super.key});
 
   final Map<String, Object> itemData;
 
   @override
   Widget build(BuildContext context) {
+    // Checks if the user's answer matches the correct answer.
     final isCorrectAnswer =
         itemData['user_answer'] == itemData['correct_answer'];
 
+    // Layout for a summary item, displaying question and answer details.
     return Padding(
       padding: const EdgeInsets.symmetric(
         vertical: 8,

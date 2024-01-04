@@ -1,3 +1,5 @@
+// start_screen.dart
+// Represents the StartScreen StatelessWidget, the initial screen of the quiz app.
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -5,6 +7,7 @@ const startAlignment = Alignment.topLeft;
 const endAlignment = Alignment.bottomRight;
 
 class StartScreen extends StatelessWidget {
+  // Constructor for StartScreen, takes a function to initiate the quiz.
   const StartScreen(this.startQuiz, {super.key});
 
   /* Variable allows us to create a pointer that points towards a void function 
@@ -13,6 +16,7 @@ class StartScreen extends StatelessWidget {
 
   @override
   Widget build(context) {
+    // Centered layout with quiz logo, title, and start button.
     return Center(
       child: Column(
         mainAxisSize: MainAxisSize.min,

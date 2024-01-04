@@ -1,14 +1,23 @@
+// answer_button.dart
+// Defines a custom styled ElevatedButton widget to display an answer option.
 import 'package:flutter/material.dart';
 
 class AnswerButton extends StatelessWidget {
-  const AnswerButton(
-      {super.key, required this.answerText, required this.onTap});
+  // Constructor requiring answer text and tap handler.
+  const AnswerButton({
+    super.key,
+    required this.answerText,
+    required this.onTap,
+  });
 
+  // Text to be displayed on the button.
   final String answerText;
+  // Function to be called on button tap.
   final void Function() onTap;
 
   @override
   Widget build(BuildContext context) {
+    // Styled ElevatedButton for quiz answers.
     return ElevatedButton(
       onPressed: onTap,
       style: ElevatedButton.styleFrom(
