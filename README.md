@@ -5,29 +5,38 @@ Quiz App is a fun Flutter app with a bit more logic than the Dice Roller app I c
 ## Basic Functionality
 
 <div align="center">
-  <img src="rolling_the_dice.gif" alt="Example Image" width="200"/>
+  <img src="animated_walkthrough.gif" alt="Walkthrough" width="200"/>
 </div>
     
-- Caredully designed UI with different fonts, logos, colors and buttons
+- Carefully designed UI with different fonts, logos, colors and buttons
 - Tap "start quiz" to start the quiz.
-- Question with randomly shuffeled answers.
+<div align="center">
+  <img src="start_screen.png" alt="Start Screen" width="200"/>
+</div>
+- Question with randomly shuffled answers.
+<div align="center">
+  <img src="example_question.png" alt="Example Question" width="200"/>
+</div>
 - Navigate to the next question every time you give an answer. 
 - Result Screen with a Scroll view about given and correct answers, total score and a button to restart the quiz.
+<div align="center">
+  <img src="results_screen.png" alt="Results Screen" width="200"/>
+</div>
 
 ## Topics Covered
 
 There are even more principles and basic topics that I learned while programming this app. These include:
 
-1. Used the knowledge we gained during our Dice Roller App (main function as entry point, usinf runApp to pass the widget tree, etc...).
-2. Building an using multiple widgets.
+1. Used the knowledge we gained during our Dice Roller App (main function as entry point, using runApp to pass the widget tree, etc...).
+2. Building and using multiple widgets.
 3. Passing Data between widgets.
 4. Navigating between screens.
-5. Accapting and using functions as input values. 
+5. Accepting and using functions as input values. 
 6. Using conditions to output conditional content.
 7. Learned about if statements, ternary expressions and managing Widgets with conditions.
 8. Learned about loops in dart and how to combine them with maps.
-9. Got to know a few new Widgets like the SingleChildScrollView Widget.
+9. Got to know a few new widgets like the SingleChildScrollView Widget.
 10. Got to know new styling options like the shape option for elevated buttons.
 11. Used classes on top of stateful and stateless widgets. 
-12. Learned about methods used to manipulate or analyse lists in dart.
-13. Learned about the spread operator used to pull elements out of a list and add them as stand alone items to a sorounding list.
+12. Learned about methods used to manipulate or analyze lists in dart.
+13. Learned about the spread operator used to pull elements out of a list and add them as stand alone items to a surrounding list.
