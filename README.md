@@ -1,16 +1,29 @@
 # quiz_app
 
-A new Flutter project.
+Dice Roller is a simple, fun Flutter app that lets you roll a 6-sided dice. It's a perfect digital companion for board games, decision making, or just for fun! This code was produced during the completion of the Flutter course [A Complete Guide to the Flutter SDK & Flutter Framework for building native iOS and Android apps](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/learn/lecture/37130436#overview).
 
-## Getting Started
+## Basic Functionality
 
-This project is a starting point for a Flutter application.
+<div align="center">
+  <img src="rolling_the_dice.gif" alt="Example Image" width="200"/>
+</div>
+    
+- Elegant gradient background
+- Tap a button to roll a dice
+- Animated dice roll with actual images of a dice
+- Displays the result with a nice animation
 
-A few resources to get you started if this is your first Flutter project:
+## Topics Covered
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+There are a bunch of principles and basic topics that I learned while programming this app. These include:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Basics of the Dart programming language
+2. Flutter as a cross platform UI framework
+3. Basic OOP principles like classes and inheritance
+4. Methods
+5. Positional and named arguments
+6. Variables
+7. Widgets
+8. Custom Widgets
+9. Stateless and Stateful
+10. The math package
