@@ -49,3 +49,4 @@ There are even more principles and basic topics that I learned while programming
 11. Used classes on top of stateful and stateless widgets. 
 12. Learned about methods used to manipulate or analyze lists in dart.
 13. Learned about the spread operator used to pull elements out of a list and add them as stand alone items to a surrounding list.
+14. Used [pub.dev](https://pub.dev/packages/google_fonts) for the first time to include third pary packages. In this case the fonts.
